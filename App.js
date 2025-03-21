@@ -3,13 +3,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 
-// Create a placeholder Home screen component
-const HomeScreen = () => (
-  <View style={styles.container}>
-    <StatusBar style="auto" />
-  </View>
-);
-
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -28,9 +21,17 @@ export default function App() {
           }}
         />
       </Stack.Navigator>
+      <StatusBar style="auto" />
     </NavigationContainer>
   );
 }
+
+// Temporary HomeScreen component
+const HomeScreen = () => (
+  <View style={styles.container}>
+    <Text>Welcome to Axiom</Text>
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {
