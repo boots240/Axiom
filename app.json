@@ -9,22 +9,26 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1a73e8"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.axiom.civic"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#1a73e8"
+      },
+      "package": "com.axiom.civic"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "A civic engagement platform connecting citizens with their community",
+    "primaryColor": "#1a73e8"
   }
-} 
+}
